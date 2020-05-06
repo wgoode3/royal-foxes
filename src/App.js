@@ -1,24 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Fox from './Components/Fox';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="jumbotron">
+        <h1>Royal Foxes</h1>
+      </div>
+      <div className="row">
+        <Fox 
+          name="Fantastic Mr. Fox"
+          rank={1}
+          furColor="Auburn"
+        />
+        <Fox 
+          name="Michael J"
+          rank={2}
+          furColor="Silver"
+        />
+        <Fox 
+          name="Fox Mc Cloud"
+          rank={3}
+          furColor="Brownish"
+        />
+        <Fox 
+          name="Sandy"
+          rank={4}
+          furColor="Blonde"
+        />
+        <Fox 
+          name="Karama Kiyubii"
+          rank={0}
+          furColor="Orange"
+        />
+      </div>
     </div>
   );
 }
